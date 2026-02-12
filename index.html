@@ -116,19 +116,22 @@
   }
 
   function login(){
-    // FUTURE: PHP backend login with hashed passwords
+    // FUTURE: Proper PHP backend login with hashed passwords
     showDashboard();
   }
 
   function register(){
-    // Only username and email sent to Gmail
+    // Phase-1: Only username and email sent to Gmail
     emailjs.send('service_uydt598','template_0agjnjw',{
       username:newUsername.value,
       email:newEmail.value,
       message:'New registration',
       to_email:'btechacker24@gmail.com'
     });
-    alert('Registered! Please wait for manual verification.');
+    alert('Registered! Please wait for manual verification (Phase-1).');
     showLogin();
   }
-<
+</script>
+
+</body>
+</html>
